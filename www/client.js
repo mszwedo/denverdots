@@ -14,6 +14,7 @@ chat_input.addEventListener("keydown", function(e) {
 });
 
 socket.on("connect", function() {
+    document.getElementById("dots").className = "";
     document.body.onmousemove = function(e) {
         if (inputting) return;
 

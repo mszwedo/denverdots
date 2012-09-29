@@ -123,3 +123,42 @@ h1 {
 #dot3 {
     font-size: 32px;
 }
+
+.connecting span {
+    animation: connecting 0.7s;
+    -moz-animation: connecting 0.7s; /* Firefox */
+    -webkit-animation: connecting 0.7s; /* Safari and Chrome */
+    -o-animation: connecting 0.7s; /* Opera */
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+@keyframes connecting
+{
+0% {padding-right: 0;}
+50% {padding-right: 5px;}
+100% {padding-right: 0;}
+}
+
+@-moz-keyframes connecting /* Firefox */
+{
+0% {padding-right: 0;}
+50% {padding-right: 5px;}
+100% {padding-right: 0;}
+}
+
+@-webkit-keyframes connecting /* Safari and Chrome */
+{
+0% {padding-right: 0;}
+50% {padding-right: 5px;}
+100% {padding-right: 0;}
+}
+
+@-o-keyframes connecting /* Opera */
+{
+0% {padding-right: 0;}
+50% {padding-right: 5px;}
+100% {padding-right: 0;}
+}
