@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(/zenbg.png);
+    color: white;
+    
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    font-family: "Helvetica", "sans-serif";
+    font-weight: 100;
+    font-size: 22px;
+    color: #96CEFA;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#header {
+    padding: 10px 15px;
+    background: #333;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+    z-index: 999999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#header p {
+    font-family: Helvetica;
+    font-size: 13px;
+    padding: 5px 15px;
+    color: #ddd;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#header span {
+    display: inline-block;
+    height: 30px;
+    line-height: 0px;
+}
+
+.ball {
+    background: white;
+    position: absolute;
+    left: -100px;
+    height: 20px;
+    width: 20px;
+    margin: -10px -10px;
+    border-radius: 10px;
+    
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 50ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.ball.click {
+    height: 40px;
+    width: 40px;
+    margin: -20px -20px;
+    border-radius: 20px;
+}
+
+#chat_input {
+    left: -1000px;
+    top: -1000px;
+    width: 150px;
+    height: 18px;
+    padding: 4px 0;
+    position: absolute;
+}
+
+.chat_out {
+    width: 170px;
+    height: 70px;
+    overflow: auto;
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.chat_msg {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 2px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
+.user_img {
+    position: absolute;
+}
+
+.user_img, .user_img img {
+    border-radius: 3px;
+}
+
+#dots {
+    height: 30px;
+}
+
+#dots h1 {
+    display: inline-block;
+    letter-spacing: 2.5px;
+}
+
+#dot1 {
+    font-size: 68px;
+}
+
+#dot2 {
+    font-size: 40px;
+}
+
+#dot3 {
+    font-size: 32px;
+}

@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "author": "Matt Pardee <matt@c9.io>",
+    "name": "geekdots",
+    "description": "Geek dots",
+    "version": "0.0.1",
+    "repository": {
+        "url": ""
+    },
+    "engines": {
+        "node": "0.6.18"
+    },
+    "dependencies": {
+        "socket.io": "0.9.6"
+    },
+    "devDependencies": {},
+    "optionalDependencies": {}
+}
