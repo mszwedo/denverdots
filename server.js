@@ -1,8 +1,8 @@
 var fs = require("fs");
 var http = require("http");
 
-var ipaddr = process.env.OPENSHIFT_INTERNAL_IP || "0.0.0.0";
-var port = process.env.OPENSHIFT_INTERNAL_PORT || process.env.C9_PORT || 8080;
+var ipaddr = process.env.IP;
+var port = process.env.PORT;
 
 var server = http.createServer(function(req, res) {
     if (req.url.match(/^\/(index.html)?$/)) {
@@ -55,9 +55,7 @@ io.sockets.on("connection", function(socket) {
     });
 });
 
-
 // UTILS
-
 function serve(res, path, mime) {
     fs.readFile(__dirname + path, function(err, data) {
         if (err) return error(res, err);
