@@ -34,6 +34,7 @@ io.set("log level", 2);
 io.sockets.on("connection", function(socket) {
     var id = socket.id;
 
+    socket.emit("notice", { msg : "Hello, Dev-Denver" } );
     socket.on("cursor", function(data) {
         data.id = id;
         io.sockets.emit("cursor", data);
@@ -46,9 +47,9 @@ io.sockets.on("connection", function(socket) {
         });
     });
 
-    socket.on("click", function() {
+    /*socket.on("click", function() {
         io.sockets.emit("click", id);
-    });
+    });*/
 
     socket.on("disconnect", function() {
         io.sockets.emit("remove", id);
